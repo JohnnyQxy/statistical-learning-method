@@ -1,7 +1,8 @@
 import numpy as np
 
-
-# 线性回归
+'''
+线性回归
+'''
 class LinearRegression:
 
     # 初始化 Linear Regression模型
@@ -15,7 +16,7 @@ class LinearRegression:
         assert X_train.shape[0] == y_train.shape[0], \
             "the size of X_train must be equal to the size of y_train"
 
-        X_b = np.hstack([np.ones(len(X_train, 1)), X_train])
+        X_b = np.hstack([np.ones((len(X_train), 1)), X_train])
         self._theta = np.linalg.inv(X_b.T.dot(X_b)).dot(X_b.T).dot(y_train)
         self.intercept_ = self._theta[0]
         self.coef_ = self._theta[1:]
@@ -25,10 +26,10 @@ class LinearRegression:
     # 梯度下降法求解参数
     def fit_gd(self, X_train, y_train, eta=0.01, n_iters=1e4):
         '''
-        :param X_train:
-        :param y_train:
-        :param eta:
-        :param n_iters:
+        :param X_train: 训练集
+        :param y_train: 标签
+        :param eta: 学习率
+        :param n_iters: 最大迭代次数
         :return:
         '''
         assert X_train.shape[0] == y_train.shape[0], \
@@ -69,7 +70,7 @@ class LinearRegression:
 
             return theta
 
-        X_b = np.hstack([np.ones(len(X_train), 1), X_train])
+        X_b = np.hstack([np.ones((len(X_train), 1)), X_train])
         intial_theta = np.zeros(X_b.shape[1])
 
         self._theta = gradient_descent(X_b, y_train, init_theta=intial_theta)
@@ -93,7 +94,7 @@ class LinearRegression:
         assert X_test.shape[0]==y_test.shape[0],\
             "the size of X_test must be equal to the size of y_test"
         y_predict=self.predict(X_test)
-        return
+        return self.r2_score(y_test,y_predict)
 
     # 评估函数
     def r2_score(self,y_true,y_predict):
