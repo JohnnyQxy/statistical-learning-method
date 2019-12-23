@@ -1,14 +1,9 @@
 from math import log
 
 '''
-决策树之ID3
+决策树之ID3，基于信息增益进行特征选择
 '''
-
-
 class DecisionTreeID3:
-
-    def __init__(self):
-        self.tree={}
 
     # 计算信息熵
     def calc_ent(self, data_set):
