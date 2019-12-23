@@ -3,8 +3,6 @@ import numpy as np
 '''
 逻辑回归
 '''
-
-
 class LogisticRegression:
 
     def __init__(self):

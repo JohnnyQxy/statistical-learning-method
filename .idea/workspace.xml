@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796cf01f-38d5-4204-acf0-871c18f9e95b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LogisticRegression/data/testSet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DecisionTree/data/dataset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/statistical-learning-method.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/statistical-learning-method.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogisticRegression/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogisticRegression/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DecisionTree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/DecisionTree/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py" beforeDir="false" afterPath="$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LogisticRegression/logistic_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogisticRegression/logistic_regression.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,15 +36,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LogisticRegression/__init__.py">
+        <entry file="file://$PROJECT_DIR$/DecisionTree/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-12">
+              <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DecisionTree/data/dataset.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -66,17 +80,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LeastSquareMethod/__init__.py" />
-        <option value="$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py" />
         <option value="$PROJECT_DIR$/LinearRegression/logistic_regression.py" />
         <option value="$PROJECT_DIR$/LinearRegression/__init__.py" />
         <option value="$PROJECT_DIR$/LinearRegression/linear_regression.py" />
-        <option value="$PROJECT_DIR$/LogisticRegression/logistic_regression.py" />
         <option value="$PROJECT_DIR$/LogisticRegression/__init__.py" />
+        <option value="$PROJECT_DIR$/LogisticRegression/logistic_regression.py" />
+        <option value="$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py" />
+        <option value="$PROJECT_DIR$/DecisionTree/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1037" />
   </component>
@@ -86,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,41 +111,32 @@
             <path>
               <item name="statistical-learning-method" type="b2602c69:ProjectViewProjectNode" />
               <item name="statistical-learning-method" type="462c0819:PsiDirectoryNode" />
-              <item name="LinearRegression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="statistical-learning-method" type="b2602c69:ProjectViewProjectNode" />
-              <item name="statistical-learning-method" type="462c0819:PsiDirectoryNode" />
-              <item name="LogisticRegression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="statistical-learning-method" type="b2602c69:ProjectViewProjectNode" />
-              <item name="statistical-learning-method" type="462c0819:PsiDirectoryNode" />
-              <item name="LogisticRegression" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="DecisionTree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LogisticRegression/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DecisionTree/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Code\Python\statistical-learning-method\LogisticRegression" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Python\statistical-learning-method\DecisionTree\data" />
       <recent name="D:\Code\Python\statistical-learning-method\LogisticRegression\data" />
       <recent name="D:\Code\Python\statistical-learning-method\LinearRegression\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\Python\statistical-learning-method\LogisticRegression" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -146,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__init__ (2)">
+  <component name="RunManager" selected="Python.__init__ (3)">
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="statistical-learning-method" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,6 +196,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="__init__ (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="statistical-learning-method" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DecisionTree" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DecisionTree/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="statistical-learning-method" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,6 +242,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__init__ (3)" />
         <item itemvalue="Python.__init__ (2)" />
         <item itemvalue="Python.__init__ (1)" />
         <item itemvalue="Python.__init__" />
@@ -243,24 +271,29 @@
       <workItem from="1576394438214" duration="4833000" />
       <workItem from="1576467100900" duration="1662000" />
       <workItem from="1576483507655" duration="21000" />
-      <workItem from="1576483982410" duration="2411000" />
+      <workItem from="1576483982410" duration="3009000" />
+      <workItem from="1576492688948" duration="601000" />
+      <workItem from="1576548129595" duration="48000" />
+      <workItem from="1577070772012" duration="239000" />
+      <workItem from="1577071149062" duration="4871000" />
+      <workItem from="1577091374301" duration="3667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33131000" />
+    <option name="totallyTimeSpent" value="43155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.14755245" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" weight="0.23566434" />
       <window_info id="Structure" order="1" sideWeight="0.5015432" side_tool="true" weight="0.21118881" />
       <window_info id="Favorites" order="2" sideWeight="0.5015432" side_tool="true" weight="0.21118881" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04636785" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20247295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39876354" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -268,13 +301,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21020092" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.12364761" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Statistic" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.32867134" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32867134" />
       <window_info anchor="right" id="Database" order="4" weight="0.32937062" />
     </layout>
   </component>
@@ -284,6 +317,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/statistical_learning_method$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1576484023028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LinearRegression" />
     <SUITE FILE_PATH="coverage/statistical_learning_method$__init____2_.coverage" NAME="__init__ (2) Coverage Results" MODIFIED="1576486356836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LogisticRegression" />
+    <SUITE FILE_PATH="coverage/statistical_learning_method$__init____3_.coverage" NAME="__init__ (3) Coverage Results" MODIFIED="1577097575633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DecisionTree" />
     <SUITE FILE_PATH="coverage/statistical_learning_method$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1572260614373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LeastSquareMethod" />
   </component>
   <component name="editorHistoryManager">
@@ -294,12 +328,6 @@
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LeastSquareMethod/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DecisionTree/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LinearRegression/data/test.csv">
@@ -317,13 +345,6 @@
     <entry file="file://$PROJECT_DIR$/LogisticRegression/data/testSet.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LinearRegression/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LinearRegression/linear_regression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -331,20 +352,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LogisticRegression/logistic_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LogisticRegression/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="175">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinearRegression/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogisticRegression/logistic_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionTree/data/dataset.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionTree/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
