@@ -1,5 +1,6 @@
-from DecisionTree.decision_tree_ID3 import DecisionTreeID3
 import DecisionTree.treePlotter as treePlotter
+from DecisionTree.decision_tree_ID3 import DecisionTreeID3
+from DecisionTree.decision_tree_C45 import DecisionTreeC45
 
 
 def read_data(filename):
@@ -23,5 +24,10 @@ if __name__ == '__main__':
     data_set, labels = read_data(filename)
     labels_tmp = labels[:]
     ID3Tree = DecisionTreeID3()
-    ID3_tree = ID3Tree.create_tree(data_set, labels)
+    ID3_tree = ID3Tree.create_tree(data_set, labels_tmp)
     treePlotter.ID3_Tree(ID3_tree)
+
+    labels_tmp = labels[:]
+    C45Tree = DecisionTreeC45()
+    C45_tree = C45Tree.create_tree(data_set, labels_tmp)
+    treePlotter.C45_Tree(C45_tree)
