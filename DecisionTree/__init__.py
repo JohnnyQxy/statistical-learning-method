@@ -1,6 +1,7 @@
 import DecisionTree.treePlotter as treePlotter
 from DecisionTree.decision_tree_ID3 import DecisionTreeID3
 from DecisionTree.decision_tree_C45 import DecisionTreeC45
+from DecisionTree.decision_tree_cart import DecisionTreeCART
 
 
 def read_data(filename):
@@ -31,3 +32,8 @@ if __name__ == '__main__':
     C45Tree = DecisionTreeC45()
     C45_tree = C45Tree.create_tree(data_set, labels_tmp)
     treePlotter.C45_Tree(C45_tree)
+
+    labels_tmp = labels[:]
+    CARTTree = DecisionTreeCART()
+    CART_tree = CARTTree.create_tree(data_set, labels_tmp)
+    treePlotter.CART_Tree(CART_tree)
