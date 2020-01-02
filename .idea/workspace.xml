@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796cf01f-38d5-4204-acf0-871c18f9e95b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DecisionTree/decision_tree_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdaBoost/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DecisionTree/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/DecisionTree/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,40 +33,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DecisionTree/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="150">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DecisionTree/decision_tree_cart.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1761">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DecisionTree/decision_tree_ID3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="76" column="28" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DecisionTree/treePlotter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#14#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,9 +78,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="978" />
-    <option name="height" value="1038" />
+    <option name="x" value="779" />
+    <option name="width" value="826" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -119,7 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,22 +95,18 @@
               <item name="statistical-learning-method" type="b2602c69:ProjectViewProjectNode" />
               <item name="statistical-learning-method" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="statistical-learning-method" type="b2602c69:ProjectViewProjectNode" />
-              <item name="statistical-learning-method" type="462c0819:PsiDirectoryNode" />
-              <item name="DecisionTree" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Github/Statistical-Learning-Method_Code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -320,17 +284,18 @@
       <workItem from="1577071149062" duration="4871000" />
       <workItem from="1577091374301" duration="6696000" />
       <workItem from="1577157375543" duration="4191000" />
-      <workItem from="1577174754842" duration="4392000" />
+      <workItem from="1577174754842" duration="6366000" />
+      <workItem from="1577671581258" duration="2555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54767000" />
+    <option name="totallyTimeSpent" value="59296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.16853146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49845678" visible="true" weight="0.18251748" />
       <window_info id="Structure" order="1" sideWeight="0.5015432" side_tool="true" weight="0.21118881" />
       <window_info id="Favorites" order="2" sideWeight="0.5015432" side_tool="true" weight="0.21118881" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +309,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5347759" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14992271" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Statistic" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -375,16 +340,16 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LinearRegression/data/test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LinearRegression/data/train.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/LogisticRegression/data/testSet.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -456,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DecisionTree/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="150">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
