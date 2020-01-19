@@ -28,7 +28,7 @@ plt.scatter(X[50:, 0], X[50:, 1], label='1')
 plt.legend()
 plt.show()
 
-svm = SuportVectorMachine(max_iter=200)
+svm = SuportVectorMachine(max_iter=300)
 svm.fit(X_train, y_train)
 
 score = svm.score(X_test, y_test)

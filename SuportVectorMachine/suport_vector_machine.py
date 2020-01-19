@@ -3,9 +3,22 @@ import numpy as np
 
 class SuportVectorMachine:
 
-    def __init__(self, max_iter=100, kernel='linear'):
+    def __init__(self, max_iter=100, kernel='linear',C=1.0):
         self.max_iter = max_iter
         self.kernel = kernel
+        self.C = C
+
+    def init_args(self,X_train,y_train):
+        self.X = X_train
+        self.y = y_train
+        self.m, self.n = X_train.shape
+        # 初始化优化变量
+        self.alpha = np.ones(self.m)
+        self.b = 0.0
+
+        # 初始化中间变量和松弛变量
+        self.E = [self._E(i) for i in range(self.m)]
+
 
     def _compare(self, alpha, L, H):
         if alpha > H:
@@ -23,8 +36,8 @@ class SuportVectorMachine:
         :param i2:
         :return:
         '''
-        return self._kernel(self.X[i1], self.X[i1]) + self._kernel(self.X[i2], self.X[i2]) - \
-               2 * self._kernel(self.X[i1], self.X[i2])
+        return self._kernel(self.X[i1], self.X[i1]) + self._kernel(self.X[i2], self.X[i2]) \
+               - 2 * self._kernel(self.X[i1], self.X[i2])
 
     def _KKT(self, i):
         '''
@@ -35,7 +48,7 @@ class SuportVectorMachine:
         yg = self._g(i) * self.y[i]
         if self.alpha[i] == 0:
             return yg >= 1
-        elif self.alpha[i] == 1:
+        elif 0 < self.alpha[i] < self.C:
             return yg == 1
         else:
             return yg <= 1
@@ -72,9 +85,9 @@ class SuportVectorMachine:
         :return:
         '''
         if self.kernel == 'linear':
-            return np.sum([x1[i] * x2[i] for i in range(self.n)])
+            return sum([x1[i] * x2[i] for i in range(self.n)])
         elif self.kernel == 'poly':
-            return (np.sum([x1[i] * x2[i] for i in range(self.n)]) + 1) ** 2
+            return (sum([x1[i] * x2[i] for i in range(self.n)]) + 1) ** 2
 
     def _g(self, i):
         '''
@@ -83,7 +96,9 @@ class SuportVectorMachine:
         :return:
         '''
         b = self.b
-        return np.sum([self.alpha[j] * self.y[j] * self._kernel(self.X[j], self.X[i]) + b for j in range(self.m)])
+        for j in range(self.m):
+            b += self.alpha[j] * self.y[j] * self._kernel(self.X[i], self.X[j])
+        return b
 
     def _E(self, i):
         '''
@@ -99,16 +114,7 @@ class SuportVectorMachine:
         :param y_train:
         :return:
         '''
-        self.X = X_train
-        self.y = y_train
-        self.m, self.n = X_train.shape
-        # 初始化优化变量
-        self.alpha = np.ones(self.m)
-        self.b = 0.0
-
-        # 初始化中间变量和松弛变量
-        self.E = [self._E(i) for i in range(self.m)]
-        self.C = 1.0
+        self.init_args(X_train,y_train)
 
         # 开始训练
         for epoch in range(self.max_iter):
@@ -131,15 +137,13 @@ class SuportVectorMachine:
             if eta <= 0:
                 continue
 
-            alpha2_new_unc = self.alpha[i2] + self.y[i2] * (self.E[i1] - self.E[i2]) / eta
+            alpha2_new_unc = self.alpha[i2] + self.y[i2] * (E2 - E1) / eta
             alpha2_new = self._compare(alpha2_new_unc, L, H)
 
             alpha1_new = self.alpha[i1] + self.y[i1] * self.y[i2] * (self.alpha[i2] - alpha2_new)
 
-            b1_new = -E1 - self.y[i1] * self._kernel(self.X[i1], self.X[i1]) * (alpha1_new - self.alpha[i1]) \
-                     - self.y[i2] * self._kernel(self.X[i2], self.X[i1]) * (alpha2_new - self.alpha[i2]) + self.b
-            b2_new = -E2 - self.y[i1] * self._kernel(self.X[i1], self.X[i2]) * (alpha1_new - self.alpha[i1]) \
-                     - self.y[i2] * self._kernel(self.X[i2], self.X[i2]) * (alpha2_new - self.alpha[i2]) + self.b
+            b1_new = -E1 - self.y[i1] * self._kernel(self.X[i1], self.X[i1]) * (alpha1_new - self.alpha[i1]) - self.y[i2] * self._kernel(self.X[i2], self.X[i1]) * (alpha2_new - self.alpha[i2]) + self.b
+            b2_new = -E2 - self.y[i1] * self._kernel(self.X[i1], self.X[i2]) * (alpha1_new - self.alpha[i1]) - self.y[i2] * self._kernel(self.X[i2], self.X[i2]) * (alpha2_new - self.alpha[i2]) + self.b
 
             if 0 < alpha1_new < self.C:
                 b_new = b1_new
