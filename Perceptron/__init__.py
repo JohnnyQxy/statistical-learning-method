@@ -25,9 +25,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 perceptron = Perceptron(max_iter=1000)
 print(perceptron.fit(X_train, y_train))
 
-dotx = np.linspace(4, 7, 10)
-doty = -(perceptron.coef_[0] * dotx + perceptron.intercept_) / perceptron.coef_[1]
-plt.plot(dotx, doty)
+x1 = np.linspace(4, 7, 10)
+x2 = -(perceptron.coef_[0] * x1 + perceptron.intercept_) / perceptron.coef_[1]
+plt.plot(x1, x2)
 plt.plot(X[:50, 0], X[:50, 1], 'bo', color='blue', label='0')
 plt.plot(X[50:100, 0], X[50:100, 1], 'bo', color='orange', label='1')
 plt.legend()
